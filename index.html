@@ -91,6 +91,7 @@
                 console.log("ImageTracker initialized!");
                 await LoadWebcams();
                 document.getElementById("startARButton").style.display = "block";
+		StartAR();
             })
             .catch(error => {
                 console.error("Failed to initialize ImageTracker. Are you missing opencv.js? " + error);
